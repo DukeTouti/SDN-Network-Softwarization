@@ -4,7 +4,7 @@ from mininet.cli import CLI
 from mininet.log import setLogLevel, info
 
 def build_network():
-	net = Mininet(controller=none, switch=OVSBridge)
+	net = Mininet(controller=None, switch=OVSBridge)
 	
 	core = net.addSwitch('c1')
 	d1 = net.addSwitch('d1')
@@ -35,9 +35,9 @@ def build_network():
 	net.stop()
 	
 	
-	if __name__ == '__main__':
-		setLogLevel('info')
-		build_network()
+if __name__ == '__main__':
+	setLogLevel('info')
+	build_network()
 	
 	
 	
